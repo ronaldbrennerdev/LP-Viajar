@@ -366,9 +366,28 @@ footer{
 @media (max-width: 950px){
     
     /**Navegação**/
+    header{
+        display: flex;
+        justify-content: center;
+    }
     nav{
         display: none;
     }
+
+    header > .button{
+        display: none;
+    }
+
+    /**Banner**/
+    main div.banner{
+        padding: 50px 10px 150px 10px;
+        text-align: center;
+    }
+
+    .banner h1{
+        font-size: 35px;
+    }
+
     /**Icones dicas e viagens**/
     .icones-dicas{
         display: block;
@@ -383,7 +402,14 @@ footer{
     }
     /**Destinos**/
     .destinos-destaque{
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0px;
+    }
+
+    .foto-fernando, .foto-paris, .foto-santorini{
+        width: 90%;
     }
     /**Vídeo**/
     .div-video{
@@ -394,7 +420,7 @@ footer{
     }
 
     iframe{
-        width: 80%;
+        width: 100%;
         margin: 0px;
     }
     /**Email**/
@@ -403,29 +429,31 @@ footer{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 20px 10px 50px 10px;
+        height: 250px;
     }
 
     .envelope{
-        padding: 0px;
+        display: none;
     }
 
     .button-email{
         padding: 15px 25px;
+        
     }
     input{
         padding: 10px 100px 10px 10px;
     }
     .texto-email p{
-        max-width: 400px;
+        text-align: center;
     }
+
     /**rodapé**/
     .rodape, .direitos{
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 20px 0px;
+        padding: 20px 10px;
     }
 }
 
@@ -460,8 +488,10 @@ footer{
     }
 
     .rodape{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+        padding: 20px 10px;
     }
 }
