@@ -1,0 +1,467 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: #E2E8F0;
+}
+
+
+/**Menu de navegação**/
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.logo{
+    width: 150px;
+}
+
+nav{
+    padding-top: 20px;
+}
+
+nav a{
+    padding: 1px 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: #14B8A6;
+    font-weight: bold;
+}
+
+nav a.ativo{
+    color: #14B8A6;
+    font-weight: bold;
+}
+
+.button{
+    background-color: #14B8A6;
+    color: white;
+    border: 2px #14B8A6 solid;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #0f8a7c;
+}
+
+/**Banner do Conteúdo Principal**/
+main div.banner{
+    /**Banner Principal**/
+    background-image:
+        linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0)
+        ),
+        url(Banner/Banner-Principal.png);
+    background-size: cover;
+    background-position: center;
+    /**Texto**/
+    color: white;
+    font-size: 25px;
+    padding: 50px 0px 120px 50px;
+}
+
+.banner p{
+    /**Parágrafo do Banner Principal**/
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 0px 0px 20px 0px;
+}
+
+span{
+    /**Texto do Banner Principal**/
+    color: #16c7b3;
+}
+
+.button-video{
+    /**Botão do Banner Principal**/
+    background-color: #14b8a500;
+    color: white;
+    border: 1px white solid;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+.button-video:hover{
+    /**Botão do Banner Principal**/
+    background-color: #0f8a7c;
+}
+
+.icone-banner {
+    /**Ícone do Botão do Banner Principal**/
+    position: relative;
+    top: 2px;
+}
+
+/**Ícones do Conteúdo Principal**/
+.icones-dicas{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.icones-dicas-texto{
+    text-align: center;
+    padding: 50px 0px;
+    
+}
+
+.icones-dicas-texto img{
+    width: 50px;
+}
+
+.linha{
+    border-right: 1px #E2E8F0 solid;
+    height: 100px;
+    margin: 70px 0px;
+}
+
+/**Ícones do Conteúdo Principal**/
+.destinos{
+    display: grid;
+    align-items: center;
+}
+
+.titulo-destinos{
+    text-align: center;
+    
+}
+
+.destinos-destaque{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px 0px;
+}
+
+.tracado-destino{
+    width: 5%;
+    height: 5px;
+    background-color: #0c6d62;
+    margin: 0 auto;
+}
+
+.foto-fernando{
+    background-image:
+        linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.9),
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0)
+        ), url(Banner-de-Destino/Fernando-de-Noronha.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.foto-paris{
+    background-image:
+        linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.9),
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0)
+        ), url(Banner-de-Destino/Paris.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.foto-santorini{
+    background-image:
+        linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.9),
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0)
+        ), url(Banner-de-Destino/Santorini.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.titulo-destino{
+    padding: 0px 20px;
+    margin: 0px;
+}
+
+.p-destino{
+    padding: 0px 20px;
+    margin: 5px 0px 20px 0px;
+}
+
+.button-destinos{
+    text-align: center;
+    width: 200px;
+    margin: 50px auto;
+    background-color: #14b8a500;
+    color: #14B8A6;
+    border: 2px #14B8A6 solid;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+.button-destinos:hover{
+    background-color: #0f8a7c;
+    color: white;
+}
+
+/**Div do Vídeo**/
+.div-video{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 70px 0px;
+}
+
+iframe{
+    margin-right: 50px;
+    border-radius: 20px;
+    width: 560px;
+    height: 315px;
+}
+
+.p-video1{
+    color: #0f8a7c;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.h2-video{
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+.p-video2{
+    padding-bottom: 20px;
+}
+
+/**E-mail**/
+.caixa-email{
+    background-color: #14B8A6;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+.principal-text-email{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.envelope{
+    padding-right: 30px;
+}
+
+.button-email{
+    background-color: #073e38;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 0px 10px 10px 0px;
+    text-decoration: none;
+}
+
+form{
+    display: flex;
+}
+
+.button-email:hover{
+    background-color: #0b675c;
+}
+
+input{
+    padding: 10px 200px 10px 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+/**Rodapé**/
+footer{
+    background-color: #073e38;
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: #073e38;
+    text-decoration: none;
+}
+
+.logo-rodape{
+    width: 120px;
+}
+
+.links-rodape{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.links-rodape a, .links-direitos a{
+    text-decoration: none;
+    color: white;
+} 
+
+.links-rodape a:hover, .links-direitos a:hover{
+    text-decoration: underline;
+    color: #12e7ce;
+}
+
+.tracado-rodape{
+    width: 80%;
+    height: 1px;
+    background-color: #0c6d62;
+    margin: 15px auto;
+}
+
+.direitos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #073e38;
+    text-decoration: none;
+    padding: 0px 120px;
+}
+
+
+/**Mobile**/
+@media (max-width: 950px){
+    
+    /**Navegação**/
+    nav{
+        display: none;
+    }
+    /**Icones dicas e viagens**/
+    .icones-dicas{
+        display: block;
+    }
+
+    .icones-dicas-texto{
+        padding: 20px 0px;
+    }
+
+    .linha{
+        display: none;
+    }
+    /**Destinos**/
+    .destinos-destaque{
+        display: grid;
+    }
+    /**Vídeo**/
+    .div-video{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    iframe{
+        width: 80%;
+        margin: 0px;
+    }
+    /**Email**/
+    .caixa-email{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 10px 50px 10px;
+    }
+
+    .envelope{
+        padding: 0px;
+    }
+
+    .button-email{
+        padding: 15px 25px;
+    }
+    input{
+        padding: 10px 100px 10px 10px;
+    }
+    .texto-email p{
+        max-width: 400px;
+    }
+    /**rodapé**/
+    .rodape, .direitos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 0px;
+    }
+}
+
+/**Tablet**/
+@media (max-width: 1024px){
+    .icones-dicas{
+        padding: 0px 20px;
+    }
+
+    .destinos-destaque{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .div-video{
+        padding: 50px 30px;
+    }
+
+    .caixa-email{
+        padding: 10px 30px;
+    }
+
+    input{
+        padding: 10px 70px 10px 10px;
+    }
+
+    .texto-email p{
+        width: 300px;
+        text-align: justify;
+    }
+
+    .rodape{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+}
